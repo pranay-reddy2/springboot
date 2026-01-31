@@ -17,4 +17,6 @@ public class ProductRequest {
 
     @Min(0)
     private Integer stock;
+    private String description;  // Add this
+
 }

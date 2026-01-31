@@ -7,13 +7,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class OrderRequest {
+public class OrderItemRequest {
     @NotNull
-    private Long userId;
+    private Long productId;
 
-    @NotNull
-    private List<OrderItemRequest> items;  // Add this
-
-    // totalAmount can be calculated on the backend
+    @Min(1)
+    private Integer quantity;
 }
-
